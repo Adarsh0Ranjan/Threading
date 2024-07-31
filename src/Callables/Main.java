@@ -1,2 +1,4 @@
-package Callables;public class Main {
+package Callables;
+
+public class Main {
 }
