@@ -5,7 +5,11 @@ import java.util.concurrent.Executors;
 
 public class Client {
     public static void main(String[] args) {
-        Executor executors = Executors.newFixedThreadPool(10);
+        // This will create 10 threads but if we have 11 task then 1 task will wait in work queue once thread will get available it 11 task will gets assigned
+//        Executor executors = Executors.newFixedThreadPool(10);
+
+        //This will adjust number of thread according the requirement it will create new thread if threads are busy if available the reuse
+        Executor executors = Executors.newCachedThreadPool();
 
         for(int i = 1; i<= 100; i++) {
             NumberPrinter numberPrinter = new NumberPrinter(i);
