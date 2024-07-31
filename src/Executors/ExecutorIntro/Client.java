@@ -11,6 +11,8 @@ public class Client {
         //This will adjust number of thread according the requirement it will create new thread if threads are busy if available the reuse
         Executor executors = Executors.newCachedThreadPool();
 
+        // for getting more control like stop pause and all use executor service
+
         for(int i = 1; i<= 100; i++) {
             NumberPrinter numberPrinter = new NumberPrinter(i);
             // we don't need to start thread and neither need to create thread executors it will create thread and reuse efficiently as well
