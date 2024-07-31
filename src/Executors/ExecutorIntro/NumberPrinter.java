@@ -1,9 +1,9 @@
-package IntroToThreads.print1to100OnDifferentThread;
+package Executors.ExecutorIntro;
 
 public class NumberPrinter implements Runnable{
     private int num;
 
-    public  NumberPrinter(int num) {
+    public NumberPrinter(int num) {
         this.num = num;
     }
 

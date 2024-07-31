@@ -1,4 +1,4 @@
-package print1to100OnDifferentThread;
+package IntroToThreads.print1to100OnDifferentThread;
 
 public class client {
     public static void main(String[] args) {

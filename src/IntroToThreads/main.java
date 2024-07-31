@@ -1,2 +1,7 @@
-package IntroToThreads;public class main {
+package IntroToThreads;
+
+public class main {
+    public static void main(String[] args) {
+
+    }
 }

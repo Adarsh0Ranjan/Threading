@@ -1,4 +1,4 @@
-package HelloWorldThread;
+package IntroToThreads.HelloWorldThread;
 
 public class HelloWorldPrinter implements Runnable {
     @Override
